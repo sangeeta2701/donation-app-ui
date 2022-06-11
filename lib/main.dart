@@ -134,6 +134,98 @@ class HomeScreen extends StatelessWidget {
                       SizedBox(
                         height: 36,
                       ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          Column(
+                            children: [
+                              Text(
+                                "224",
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 6,
+                              ),
+                              Text(
+                                "DONARS",
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w400,
+                                  letterSpacing: 0.2,
+                                ),
+                              ),
+                            ],
+                          ),
+
+                          // copy the above column and paste it 2 times
+                          Column(
+                            children: [
+                              Text(
+                                "\$ 6,000",
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 6,
+                              ),
+                              Text(
+                                "RAISED",
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w400,
+                                  letterSpacing: 0.2,
+                                ),
+                              ),
+                            ],
+                          ),
+                          /////
+                          Column(
+                            children: [
+                              Text(
+                                "\$7,000",
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 6,
+                              ),
+                              Text(
+                                "GOALS",
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontWeight: FontWeight.w400,
+                                  letterSpacing: 0.2,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                      SizedBox(
+                        height: 12,
+                      ),
+                      SliderTheme(
+                          data: SliderTheme.of(context).copyWith(
+                            disabledActiveTrackColor:
+                                Color.fromRGBO(255, 70, 87, 1),
+                            trackHeight: 4,
+                            thumbColor: Colors.transparent,
+                            thumbShape:
+                                RoundSliderThumbShape(enabledThumbRadius: 0),
+                          ),
+                          child: Slider.adaptive(
+                            value: 90,
+                            onChanged: null,
+                            min: 0,
+                            max: 100,
+                          ))
                     ],
                   ),
                 ),
